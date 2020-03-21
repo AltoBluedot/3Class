@@ -1,0 +1,163 @@
+::-webkit-scrollbar {
+    
+	width: 3px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+	margin: 3px;
+	border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #5bba4e;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #5bba4e;
+}
+::-webkit-scrollbar-corner {
+	background: #5bba4e;
+	border-radius: 10px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+::selection {
+    color: #000;
+    background: #3eb1ff;
+    
+    border-radius: 5px;
+}
+::-moz-selection {
+    color: #000;
+    background: #3eb1ff;
+    
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 950px) {
+	.navbar {
+		width: 100px !important;
+		max-height: none !important;
+	}
+	.navbar .appico {
+		width: 60px !important;
+		
+		margin-bottom: 20px !important;
+	}
+	.navbar .name {
+		display: none !important;
+		opacity: 0% !important;
+	}
+	.navbar .navi {
+		width: 20px !important;
+	}
+	.navbar .navi img {
+		margin: 0px !important;
+		margin-left: 2px !important;
+		margin-bottom: 1px !important;
+		padding: 0px !important;
+	}
+	.navbar .navi .loc {
+		display: none !important;
+	}
+	.navbar .sec {
+		display: none !important;
+	}
+	.content {
+		width: calc(100% - 120px) !important;
+		max-height: none !important;
+	}
+	.content {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+	}
+	.content .week {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+	}
+	.results {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+	}
+	.content .footer .fooinfo {
+		display: none;
+	}
+}
+@media only screen and (max-height: 901px) {
+	.navbar .tris {
+		display: none !important;
+	}
+}
+
+::placeholder {
+    color: rgb(200,200,200);
+    
+    font-family: Varela Round, sans-serif;
+    font-size: 16px;
+    
+    font-weight: 400;
+} 
+  
+:-ms-input-placeholder {
+    color: #000;
+    
+    font-family: Varela Round, sans-serif;
+    font-size: 16px;
+    
+    font-weight: 400;
+} 
+  
+::-ms-input-placeholder {
+    color: #000;
+    
+    font-family: Varela Round, sans-serif;
+    font-size: 16px;
+    
+    font-weight: 400;
+} 
+input:focus, textarea:focus, select:focus{
+	outline: none;
+}
+
+.lang-sel {
+	position: absolute;
+	
+	top: 4px;
+	right: 15px;
+	
+	background: #000000;
+	
+	padding: 5px;
+	
+	border-radius: 5px;
+}
+.lang-sel .lang-ico {
+	margin: 0px;
+	margin-right: 5px;
+	padding: 0px;
+	
+	width: 12px;
+	
+	display: inline-block;
+	
+	-webkit-filter: brightness(100);
+	filter: brightness(100);
+}
+.lang-sel .lang-name {
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 2px;
+	
+	font-size: 12px;
+	
+	vertical-align: middle;
+	
+	
+	display: inline-block;
+	
+	color: #ffffff;
+	
+	text-decoration: none;
+}

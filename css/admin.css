@@ -1,0 +1,368 @@
+BODY {
+	margin: 0px;
+	padding: 0px;
+	
+	font-family: Quicksand, sans-serif;
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+    transition: 0.2s;
+	
+	overflow-x: hidden;
+	overflow-y: scroll;
+	
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nostyle {
+	text-decoration: none;
+	color: black;
+}
+
+.weatherinfo {
+	width: 100%;
+	height: 100%;
+	
+	display: block;
+}
+.weatherinfo .appinfo {
+	width: 100%;
+	text-align: center;
+	
+	-webkit-app-region: drag;
+}
+.weatherinfo .appinfo .appico {
+	height: 100px;
+	margin: 20px;
+	margin-top: 25px;
+	margin-bottom: -10px;
+	padding: 0px;
+	
+	display: inline-block;
+}
+.weatherinfo .appinfo .name {
+	margin: 0px;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding: 0px;
+	
+	font-size: 28px;
+	font-weight: 700;
+	
+	transition: 0.2s;
+}
+.weatherinfo .loadinfo {
+	width: 100%;
+	max-width: 600px;
+    height: calc(100% - 234px);
+    position: absolute;
+    background: white;
+    
+    z-index: 100;
+}
+.weatherinfo .loadinfo #getloc {
+	margin-left: 30px;
+	margin-right: 30px;
+	height: 60px;
+	width: calc(100% - 60px);
+	
+	background: black;
+	
+	border-radius: 30px;
+	
+	position: absolute;
+	bottom: 70px;
+	
+	text-align: center;
+	
+	transition: 0.2s;
+}
+.weatherinfo .loadinfo #getloc:hover {
+	transform: scale(1.05);
+}
+.weatherinfo .loadinfo #getloc #glyes {
+	margin-top: 19px;
+
+	font-size: 16px;
+	
+	font-weight: 500;
+	
+	color: white;
+}
+.weatherinfo .loadinfo #getloc #glyes img {
+	height: 20px;
+	
+	vertical-align: top;
+	
+	margin-right: 5px;
+}
+.weatherinfo .loadinfo #glno {
+	position: absolute;
+	bottom: 20px;
+	
+	text-align: center;
+	width: 100%;
+	
+	text-transform: uppercase;
+	font-size: 12px;
+	color: rgb(200, 200, 200);
+}
+.weatherinfo .loadinfo #glinfo {
+	margin-left: 30px;
+	margin-right: 30px;
+
+	position: absolute;
+	bottom: 150px;
+	
+	text-align: left;
+	width: calc(100% - 60px);
+	
+	font-size: 12px;
+	color: rgb(200, 200, 200);
+}
+.weatherinfo .info {
+	font-size: 12px;
+	
+	text-transform: uppercase;
+	
+	margin: 40px;
+	margin-left: 50px;
+	margin-bottom: 5px;
+	padding: 0px;
+	
+	color: rgb(200, 200, 200);
+}
+.weatherinfo .param {
+	width: calc(100% - 40px);
+	height: 60px;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+	margin-top: 2px;
+	margin-bottom: 2px;
+	
+	border-radius: 20px;
+	
+	transition: 0.2s;
+	
+	overflow: hidden;
+}
+.weatherinfo .param:hover {
+	background: rgb(250, 250, 250);
+}
+.weatherinfo .param img {
+	width: 20px;
+	
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 10px;
+	
+	display: inline-block;
+	
+	vertical-align: top;
+}
+.weatherinfo .wiconplay {
+	display: none !important;
+}
+.weatherinfo .param .sdat {
+	width: calc(100% - 120px);
+	height: 60px;
+	
+	display: inline-block;
+}
+.weatherinfo .param .sdat .stitle {
+	font-weight: 600;
+	margin-top: 13px;
+	margin-bottom: 0px;
+	
+	font-size: 14px;
+}
+.weatherinfo .param .sdat .sdetail {
+	font-weight: 400;
+	margin-top: 2px;
+	
+	font-size: 12px;
+	
+	color: #c8c8c8;
+}
+.weatherinfo .param .sdat .sdinfo {
+	font-weight: 500;
+	margin-top: 2px;
+	
+	font-size: 12px;
+	
+	color: black;
+	
+	text-overflow: ellipsis;
+	
+	white-space: nowrap;
+	overflow: hidden;
+}
+.weatherinfo .param .stime {
+	font-weight: 400;
+	margin-top: 23px;
+	
+	text-align: right;
+	
+	font-size: 12px;
+	
+	width: 40px;
+	
+	color: #c8c8c8;
+	
+	display: inline-block;
+	
+	vertical-align: top;
+}
+
+.current {
+	width: 100%;
+	max-width: 600px;
+	height: 120px;
+	
+	position: fixed;
+	bottom: 0px;
+	
+	border-top-left-radius: 24px;
+	border-top-right-radius: 24px;
+	
+	background: white;
+}
+.invis {
+	display: none;
+}
+.current #simg {
+	width: 66px;
+	height: 66px;
+	
+	margin-left: 28px;
+	margin-top: 27px;
+	margin-right: 27px;
+	margin-right: 22px;
+	
+	display: inline-block;
+}
+
+.current .sinfo {
+	width: calc(100% - 150px);
+	height: 100%;
+	
+	display: inline-block;
+	
+	vertical-align: top;
+}
+
+.current .sinfo #stemp {
+	margin-top: 32px;
+	margin-bottom: 0px;
+
+	font-size: 28px;
+	
+	font-weight: 600;
+	
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.current .sinfo #scomment {
+	margin-top: 0px;
+	
+	font-size: 14px;
+	
+	font-weight: 500;
+	
+	color: #c8c8c8;
+	
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.spacer {
+	height: 30px;
+	width: 100%;
+}
+
+.cparam .stitle {
+	color: #ff0066;
+}
+.cparam .wicon {
+	display: none !important;
+}
+.cparam .wiconplay {
+	display: inline-block !important;
+}
+
+@media only screen and (max-width: 550px) {
+	
+}
+@media only screen and (max-width: 350px) {
+	
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.notransition * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.noview {
+	display: none;
+}
+
+.darkmode {
+	background: black;
+}
+.darkmode .appinfo img {
+	filter: invert(100);
+}
+.darkmode .appinfo p {
+	color: white;
+}
+.darkmode .loadinfo {
+	background: black;
+}
+.darkmode .loadinfo #getloc {
+	background: white;
+}
+.darkmode .loadinfo #getloc img {
+	filter: invert(100);
+}
+.darkmode .loadinfo #getloc #glyes {
+	color: black;
+}
+.darkmode .current {
+	background: black;
+}
+.darkmode .current img {
+	filter: invert(100);
+}
+.darkmode .sinfo #stemp {
+	color: white;
+}
+.darkmode .weatherinfo .param:hover {
+	background: rgb(30, 30, 30);
+}
+.darkmode .weatherinfo .param img {
+	filter: invert(100);
+}
+.darkmode .weatherinfo .param .sdat .stitle {
+	color: white;
+}
+.darkmode .weatherinfo .param .sdat .sdinfo { 
+	color: white;
+}
