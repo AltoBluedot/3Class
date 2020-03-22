@@ -1,4 +1,10 @@
 <?php 
+/*
+        authors:
+        Piotr Bienkowski
+        Bartosz Kostarczyk
+        Mateusz Mazurczak
+    */
     session_start();
     
     if(!isset($_SESSION['gsidkLOG']))
