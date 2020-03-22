@@ -1,14 +1,12 @@
 <?php
+/*
+        authors:
+        Piotr Bienkowski
+        Bartosz Kostarczyk
+        Mateusz Mazurczak
+    */
     session_start();
     include "db.php";
-    /*if(!isset($_SESSION['gsidkLOG']))
-    { 
-        header("Location: login.php");
-    }
-    if($_SESSION['gsidkLOG'] != 123)
-    {
-        header("Location: login.php");
-    }*/
     echo date('N');
     echo "</br>";
     echo date('Y-m-d H:i:s');
