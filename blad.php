@@ -1,4 +1,11 @@
-<!DOCTYPE HTML>
+<?php
+/*
+        authors:
+        Piotr Bienkowski
+        Bartosz Kostarczyk
+        Mateusz Mazurczak
+    */
+?><!DOCTYPE HTML>
 <HEAD>
 	<TITLE>3CLASS</TITLE>
 	
