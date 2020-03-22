@@ -1,5 +1,10 @@
 <?php
-
+/*
+        authors:
+        Piotr Bienkowski
+        Bartosz Kostarczyk
+        Mateusz Mazurczak
+    */
 ?>
 <!DOCTYPE HTML>
 <HEAD>
