@@ -1,4 +1,10 @@
 <?php
+/*
+        authors:
+        Piotr Bienkowski
+        Bartosz Kostarczyk
+        Mateusz Mazurczak
+    */
 session_start();
 session_regenerate_id();
 session_save_path();
