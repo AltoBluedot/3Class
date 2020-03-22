@@ -28,7 +28,7 @@ else{
 }
 if(isset($_POST['action']))
 {
-$sprawdz = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6Lcl_OIUAAAAAM-dDD6TVuhCtrlginws5Wn6-R8L&response='.$_POST['g-recaptcha-response']);
+$sprawdz = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=<SECRET_KEY>&response='.$_POST['g-recaptcha-response']);
         
 $odpowiedz = json_decode($sprawdz);
         
